@@ -25,7 +25,7 @@ SECRET_KEY = 'xd2a$6aun)wg61is$ugcr!7(@9@#3me--yv=_=e&3sctp@x*h('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.0.179']
+ALLOWED_HOSTS = ['10.0.0.179', 'cdaboin.ddns.net']
 
 
 # Application definition
