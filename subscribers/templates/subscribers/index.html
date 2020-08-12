@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Subscribers</title>
+    </head>
+    <body>
+        <h1>Subscribers List</h1>
+        <div>
+            <ul>
+                {% for subscriber in subscribers %}
+                <li>
+                    <h4><a href="/subscribers/{{ subscriber.id }}/">{{ subscriber.name }}</a></h4>
+                    <p>{{ subscriber.email }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

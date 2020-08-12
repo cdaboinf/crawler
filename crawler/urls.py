@@ -16,8 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from subscribers import views
+from webcrawlers import views as crawler_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # get all subscribers
     path('subscribers/', views.subscribers.as_view(), name='subscribers'),
+    # get single subscriber
+    path('subscribers/<int:id>/', views.subscribers_details.as_view(), name='subscribers_details'),
+    # path(r'subscribers/(?P<id>[0-9]+)$', views.subscribers.as_view(), name='subscribers'),
+    # get all webcrawlers
+    path('webcrawlers/', crawler_views.webcrawlers.as_view(), name='webcrawlers'),
+    # get single webcrawlers
+    path('webcrawlers/<int:id>/', crawler_views.webcrawlers_details.as_view(), name='webcrawlers_details')
 ]
