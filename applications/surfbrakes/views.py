@@ -57,15 +57,15 @@ class surfbrakes_surfbrake(View):
 
          # summary
         if max_tide < Decimal(3) and avg_tide < Decimal(2):
-            surfbrake.summary = "Low"
+            surfbrake.summary = "Low :-("
         elif max_tide > Decimal(3) and avg_tide > Decimal(2) and avg_tide < Decimal(5):
-            surfbrake.summary = "Good"
+            surfbrake.summary = "Good !!!"
         elif max_tide > Decimal(5) and avg_tide > Decimal(3) and avg_tide < Decimal(6):
-            surfbrake.summary = "Excellent"
+            surfbrake.summary = "Excellent !!!"
         elif avg_tide > Decimal(5):
-            surfbrake.summary = "Big"
+            surfbrake.summary = "Big ;-)"
         else:
-            surfbrake.summary = "Bad"
+            surfbrake.summary = "Bad :=("
         
         surfbrake.save()
 
