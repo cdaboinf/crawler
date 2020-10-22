@@ -185,7 +185,6 @@ class surfbrakes_surfbrake(View):
         return surf_winds
 
     def __get_local_time(self):
-        # date query
         today = datetime.today()
         local_time = today  - timedelta(hours=5)
 
