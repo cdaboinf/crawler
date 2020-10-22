@@ -137,7 +137,7 @@ class surfbrakes_surfbrake(View):
 
         avg_temp = sum(temps)/len(temps)
 
-        water_temperature = f"{'{0:.2f}'.format(avg_temp)} F"
+        water_temperature = f"{'{0:.2f}'.format(avg_temp)} f"
         return water_temperature
 
     def __get_airtemp_information_from_service(self, surfbrake): 
@@ -149,7 +149,7 @@ class surfbrakes_surfbrake(View):
 
         avg_temp = sum(temps)/len(temps)
 
-        air_temperature = f"{'{0:.2f}'.format(avg_temp)} F"
+        air_temperature = f"{'{0:.2f}'.format(avg_temp)} f"
         return air_temperature
 
     def __send_request_to_service(self, search_product, surfbrake):
